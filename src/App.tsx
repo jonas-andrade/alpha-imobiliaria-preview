@@ -14,9 +14,9 @@ import BlogPost from './pages/BlogPost';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-black-900">
+      <div className="min-h-screen bg-black-900 flex flex-col">
         <Header />
-        <main>
+        <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/propriedades" element={<Properties />} />
