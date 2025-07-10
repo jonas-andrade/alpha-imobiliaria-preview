@@ -16,7 +16,8 @@ function App() {
     <Router>
       <div className="min-h-screen bg-black-900 flex flex-col">
         <Header />
-        <main className="flex-grow">
+
+        <main className="flex-grow pt-20"> 
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/propriedades" element={<Properties />} />
@@ -28,6 +29,7 @@ function App() {
             <Route path="/contato" element={<Contact />} />
           </Routes>
         </main>
+
         <Footer />
       </div>
     </Router>
